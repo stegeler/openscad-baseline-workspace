@@ -1,0 +1,15 @@
+[submodule "libraries/bosl2"]
+	path = libraries/bosl2
+	url = https://github.com/revarbat/BOSL2.git
+[submodule "libraries/dotscad"]
+	path = libraries/dotscad
+	url = https://github.com/JustinSDK/dotSCAD.git
+[submodule "libraries/round-anything"]
+	path = libraries/round-anything
+	url = https://github.com/Irev-Dev/Round-Anything.git
+[submodule "libraries/nopscadlib"]
+	path = libraries/nopscadlib
+	url = https://github.com/nophead/NopSCADlib.git
+[submodule "libraries/bosl"]
+	path = libraries/bosl
+	url = https://github.com/revarbat/BOSL.git
