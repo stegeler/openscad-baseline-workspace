@@ -20,16 +20,37 @@ A comprehensive OpenSCAD development workspace with all popular libraries, tools
 
 ## 📚 Available Libraries
 
-This workspace includes the most popular OpenSCAD libraries:
+This workspace includes the most popular OpenSCAD libraries as **Git submodules**, linking directly to their GitHub repositories:
 
 - **BOSL2** - Most comprehensive library with utilities for shapes, transforms, threading
 - **dotSCAD** - Mathematical 3D modeling utilities
 - **Round Anything** - Essential rounding utilities
 - **NopSCADlib** - Parts for 3D printers and electronics enclosures
-- **UB.scad** - Full 3D printing workflow solution
-- **BOLTS** - Open Library of Technical Specifications
+- **BOSL** - Original BOSL library
 
-See `libraries/LIBRARY_INDEX.md` for detailed information about each library.
+### 🔄 Library Management
+
+Libraries are managed as Git submodules, which means:
+
+- **Always up-to-date**: Libraries are linked to their source repositories
+- **Easy updates**: Use `git submodule update --remote` to get latest versions
+- **Clean repository**: No static copies cluttering your workspace
+- **Version control**: Each submodule tracks a specific commit for stability
+
+### 📥 Updating Libraries
+
+To update all libraries to their latest versions:
+
+```bash
+# Update all submodules to latest commits
+git submodule update --remote --merge
+
+# Or use the convenience script
+python3 scripts/update_libraries.py all
+
+# Update a specific library
+python3 scripts/update_libraries.py bosl2
+```
 
 ## 🛠️ Tools & Scripts
 
