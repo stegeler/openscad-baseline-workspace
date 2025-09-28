@@ -1,0 +1,55 @@
+# OpenSCAD Workspace .gitignore
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+Thumbs.db
+
+# OpenSCAD generated files
+*.stl
+*.3mf
+*.obj
+*.off
+*.ply
+*.dxf
+*.svg
+*.csg
+*.amf
+
+# Rendered output directory
+renders/
+
+# Project-specific files (keep templates)
+projects/*/
+!projects/*.scad
+!projects/templates/
+
+# IDE and editor files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Git
+.git/
