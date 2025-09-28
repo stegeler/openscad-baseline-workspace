@@ -53,7 +53,7 @@ def render_scad_file(scad_file, output_dir="renders"):
     # Render to PNG (preview)
     print("  Generating PNG preview...")
     success, stdout, stderr = run_command(
-        f"openscad -o {png_file} --render {scad_file}",
+        f"openscad -o {png_file} --render --imgsize=800,600 {scad_file}",
         cwd=scad_path.parent
     )
     

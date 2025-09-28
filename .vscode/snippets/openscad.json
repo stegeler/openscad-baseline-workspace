@@ -1,0 +1,137 @@
+{
+  "Cube": {
+    "prefix": "cube",
+    "body": [
+      "cube([${1:10}, ${2:10}, ${3:10}]);"
+    ],
+    "description": "Create a cube"
+  },
+  "Sphere": {
+    "prefix": "sphere",
+    "body": [
+      "sphere(r=${1:5});"
+    ],
+    "description": "Create a sphere"
+  },
+  "Cylinder": {
+    "prefix": "cylinder",
+    "body": [
+      "cylinder(h=${1:10}, r=${2:5});"
+    ],
+    "description": "Create a cylinder"
+  },
+  "Translate": {
+    "prefix": "translate",
+    "body": [
+      "translate([${1:0}, ${2:0}, ${3:0}]) {",
+      "    ${4:// object}",
+      "}"
+    ],
+    "description": "Translate an object"
+  },
+  "Rotate": {
+    "prefix": "rotate",
+    "body": [
+      "rotate([${1:0}, ${2:0}, ${3:0}]) {",
+      "    ${4:// object}",
+      "}"
+    ],
+    "description": "Rotate an object"
+  },
+  "Scale": {
+    "prefix": "scale",
+    "body": [
+      "scale([${1:1}, ${2:1}, ${3:1}]) {",
+      "    ${4:// object}",
+      "}"
+    ],
+    "description": "Scale an object"
+  },
+  "Union": {
+    "prefix": "union",
+    "body": [
+      "union() {",
+      "    ${1:// objects}",
+      "}"
+    ],
+    "description": "Union of objects"
+  },
+  "Difference": {
+    "prefix": "difference",
+    "body": [
+      "difference() {",
+      "    ${1:// base object}",
+      "    ${2:// subtract object}",
+      "}"
+    ],
+    "description": "Difference of objects"
+  },
+  "Intersection": {
+    "prefix": "intersection",
+    "body": [
+      "intersection() {",
+      "    ${1:// objects}",
+      "}"
+    ],
+    "description": "Intersection of objects"
+  },
+  "For Loop": {
+    "prefix": "for",
+    "body": [
+      "for (${1:i} = [${2:0}:${3:1}:${4:10}]) {",
+      "    ${5:// code}",
+      "}"
+    ],
+    "description": "For loop"
+  },
+  "If Statement": {
+    "prefix": "if",
+    "body": [
+      "if (${1:condition}) {",
+      "    ${2:// code}",
+      "}"
+    ],
+    "description": "If statement"
+  },
+  "If-Else Statement": {
+    "prefix": "ifelse",
+    "body": [
+      "if (${1:condition}) {",
+      "    ${2:// true code}",
+      "} else {",
+      "    ${3:// false code}",
+      "}"
+    ],
+    "description": "If-else statement"
+  },
+  "Module Definition": {
+    "prefix": "module",
+    "body": [
+      "module ${1:name}(${2:parameters}) {",
+      "    ${3:// module body}",
+      "}"
+    ],
+    "description": "Define a module"
+  },
+  "Function Definition": {
+    "prefix": "function",
+    "body": [
+      "function ${1:name}(${2:parameters}) = ${3:expression};"
+    ],
+    "description": "Define a function"
+  },
+  "Include": {
+    "prefix": "include",
+    "body": [
+      "include <${1:library.scad}>"
+    ],
+    "description": "Include a library"
+  },
+  "Use": {
+    "prefix": "use",
+    "body": [
+      "use <${1:library.scad}>"
+    ],
+    "description": "Use a library"
+  }
+}

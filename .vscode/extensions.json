@@ -1,7 +1,7 @@
 {
   "recommendations": [
-    "openscad",
-    "openscad-language-support",
-    "openscad-preview"
+    "openscad.openscad-preview",
+    "ms-vscode.vscode-json",
+    "redhat.vscode-yaml"
   ]
 }

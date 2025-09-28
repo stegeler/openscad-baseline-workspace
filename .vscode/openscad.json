@@ -1,0 +1,103 @@
+{
+  "name": "OpenSCAD",
+  "scopeName": "source.openscad",
+  "fileTypes": ["scad"],
+  "patterns": [
+    {
+      "include": "#comments"
+    },
+    {
+      "include": "#keywords"
+    },
+    {
+      "include": "#functions"
+    },
+    {
+      "include": "#modules"
+    },
+    {
+      "include": "#variables"
+    },
+    {
+      "include": "#strings"
+    },
+    {
+      "include": "#numbers"
+    }
+  ],
+  "repository": {
+    "comments": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.openscad",
+          "begin": "//",
+          "end": "$"
+        },
+        {
+          "name": "comment.block.openscad",
+          "begin": "/\\*",
+          "end": "\\*/"
+        }
+      ]
+    },
+    "keywords": {
+      "patterns": [
+        {
+          "name": "keyword.control.openscad",
+          "match": "\\b(if|else|for|intersection_for|assign|let|echo|assert)\\b"
+        },
+        {
+          "name": "keyword.operator.openscad",
+          "match": "\\b(and|or|not|true|false|undef)\\b"
+        }
+      ]
+    },
+    "functions": {
+      "patterns": [
+        {
+          "name": "support.function.openscad",
+          "match": "\\b(abs|acos|asin|atan|atan2|ceil|cos|exp|floor|ln|log|max|min|pow|rands|round|sign|sin|sqrt|tan|len|str|chr|ord|lookup|search|version|version_num|norm|cross)\\b"
+        }
+      ]
+    },
+    "modules": {
+      "patterns": [
+        {
+          "name": "support.module.openscad",
+          "match": "\\b(cube|sphere|cylinder|polyhedron|square|circle|polygon|text|linear_extrude|rotate_extrude|projection|render|surface|color|offset|hull|minkowski|resize|scale|rotate|translate|mirror|multmatrix|group|child|children|import|import_stl|import_off|import_dxf|import_3mf|intersection|union|difference)\\b"
+        }
+      ]
+    },
+    "variables": {
+      "patterns": [
+        {
+          "name": "variable.parameter.openscad",
+          "match": "\\$[a-zA-Z_][a-zA-Z0-9_]*"
+        }
+      ]
+    },
+    "strings": {
+      "patterns": [
+        {
+          "name": "string.quoted.double.openscad",
+          "begin": "\"",
+          "end": "\"",
+          "patterns": [
+            {
+              "name": "constant.character.escape.openscad",
+              "match": "\\\\."
+            }
+          ]
+        }
+      ]
+    },
+    "numbers": {
+      "patterns": [
+        {
+          "name": "constant.numeric.openscad",
+          "match": "\\b\\d+\\.?\\d*([eE][+-]?\\d+)?\\b"
+        }
+      ]
+    }
+  }
+}
